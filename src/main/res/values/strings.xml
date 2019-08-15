@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Untangle</string>
+    <string name="level">Level</string>
+    <string name="moves">Moves</string>
+    <string name="best">Best</string>
+    <string name="random">Random</string>
+    <string name="previous">previous</string>
+    <string name="retry">retry</string>
+    <string name="next">next</string>
+</resources>

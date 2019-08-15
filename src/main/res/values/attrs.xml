@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="UntangleView">
+        <attr name="edgeWidth" format="dimension"/>
+        <attr name="vertexSize" format="dimension"/>
+        <attr name="validColor" format="color"/>
+        <attr name="invalidColor" format="color"/>
+    </declare-styleable>
+</resources>

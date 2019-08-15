@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/WrapperStyle"
+    tools:context=".GameActivity">
+
+    <LinearLayout style="@style/InfoBarStyle">
+
+        <LinearLayout style="@style/InfoPanelStyle">
+
+            <TextView
+                style="@style/InfoTitleStyle"
+                android:text="@string/level" />
+
+            <TextView
+                android:id="@+id/level"
+                style="@style/InfoContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/InfoPanelStyle">
+
+            <TextView
+                style="@style/InfoTitleStyle"
+                android:text="@string/moves" />
+
+            <TextView
+                android:id="@+id/moves"
+                style="@style/InfoContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/InfoPanelStyle">
+
+            <TextView
+                style="@style/InfoTitleStyle"
+                android:text="@string/best" />
+
+            <TextView
+                android:id="@+id/best"
+                style="@style/InfoContentStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.tortoaster.untangle.UntangleView
+        android:id="@+id/untangle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/panel"
+        android:padding="10dp"
+        app:edgeWidth="10dp"
+        app:invalidColor="@color/invalid"
+        app:validColor="@color/valid"
+        app:vertexSize="15dp" />
+
+    <LinearLayout style="@style/ToolBarStyle">
+
+        <ImageButton
+            android:id="@+id/previous"
+            style="@style/IconButtonStyle"
+            android:contentDescription="@string/previous"
+            android:onClick="previous"
+            android:src="@drawable/previous" />
+
+        <ImageButton
+            style="@style/ImageButtonStyle"
+            android:contentDescription="@string/retry"
+            android:onClick="retry"
+            android:src="@drawable/retry" />
+
+        <ImageButton
+            android:id="@+id/next"
+            style="@style/IconButtonStyle"
+            android:contentDescription="@string/next"
+            android:onClick="next"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+</LinearLayout>
